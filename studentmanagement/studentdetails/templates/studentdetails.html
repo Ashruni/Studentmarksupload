@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(234, 219, 205);">
+
+   <form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <div style="height:350px;width:490px;background-color:rgb(235, 234, 232);margin-left:370px;margin-top:70px;" class="border border-3">
+    <br><h2 style="text-align:center;text-decoration:underline;">Enter Student Details</h2>
+        <table style="margin-left:50px;margin-top:-110px;" >
+    <tr>
+        <th><label>Student Name</label></th>
+        <td><input type="text" name="studentname" placeholder="Enter the student name"></td><br></tr>
+        <tr>
+            <th><label>Date Of Birth</label></th>
+    <td><input type="date" name="studentdob" placeholder="Enter the student DOB"></td><br></tr>
+    <tr>
+        <th><label>Physics Score</label></th>
+    <td><input type="number"  name="Physicsmarks" placeholder="Physics Marks"></td><br></tr>
+    <tr>
+        <th><label>Chemistry Score</label></th>
+    <td><input type="number"  name="Chemistrymarks" placeholder="Chemistry Marks"></td><br></tr>
+    <tr>
+        <th><label>Maths Score</label></th>
+    <td><input type="number" name="Mathsmarks" placeholder="Maths Marks"></td><br></tr>
+    <tr>
+        <th><label>Computer Science Score</label></th>
+    <td><input type="number" name="Computersciencemarks" placeholder="Computer Science Marks"></td><br></tr><br>
+   <tr> <th ><button  type="submit" Style="height:26px;background-color:rgb(217, 217, 45);border:none;border-radius:10px;">Submit</button></th></tr>
+</table>
+        </div>
+   </form>
+
+</body>
+</html>

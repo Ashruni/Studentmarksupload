@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:rgb(234, 219, 205);">
+<!--<form method="get">{% csrf_token %}-->
+
+<div>
+    <h2 style="margin-left:530px;text-decoration:underline;">Student Mark Details</h2>
+ <table border="1px;" style="width:350px;margin-left:420px;background-color:white;margin-top:20px;">
+<!--height:350px-->
+
+     <tr>
+         <th>Student Name</th>
+         <th>Student DOB</th>
+         <th>Physics Marks</th>
+         <th>Chemistry Marks</th>
+         <th>Maths Marks</th>
+         <th>Computer Science Marks</th>
+         <th>Total Percentage</th>
+     </tr>
+     {% for i,j,k,l,m,n,o in h %}
+
+     <tr>
+         <td>{{i}}</td>
+         <td>{{j}}</td>
+         <td>{{k}}</td>
+         <td>{{l}}</td>
+         <td>{{m}}</td>
+         <td>{{n}}</td>
+         <td>{{o}}%</td>
+
+
+
+     </tr>
+
+{% endfor %}
+</table>
+</div>
+<!--</form>-->
+</body>
+</html>
